@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <h1>Find your film</h1>
+            <a href="watchlist.html">My Watchlist</a>    
+        </nav>
+        <div class="search-div">
+            <img style="width:30px ; height: 30px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png">
+            <input type="search" id="search" placeholder="Search for a movie">
+            <button id="btn">Search</button>
+        </div>
+        <main id="main">
+            <div>
+                <img src="data:image/png;base64,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">
+                <h3>Start exploring</h3>
+            </div>
+            
+        </main>   
+        
+        <script src="index.js"></script>
+    </body>
+</html>

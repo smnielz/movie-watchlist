@@ -1,0 +1,160 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100vh;
+}
+
+nav{
+    background-image: url("img/nav.jpg");
+    background-color:#404040;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position-y: -100px;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+nav > h1{
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 0px;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+}
+
+div.search-div{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: absolute;
+    top: 28%;
+    left: 12.5%;
+}
+
+div.search-div > img{
+    width: 10%;
+}
+
+div.search-div > input{
+    border: none;
+    width: 60%;
+}
+
+div.search-div > button{
+    width: 30%;
+    border: none;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: gray;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav, 
+main{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+div.main-search{
+    text-align: left;
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1rem;
+    border-bottom: 1px solid gray;
+    margin-bottom: 25px;
+}
+
+div.main-search-div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+    align-items: center; 
+}
+
+div.main-search>img{
+    width: 25%;
+    margin-left: 0;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+
+div.title > p,
+div.genre >p,
+div.plot>p{
+    margin: 10px;
+    font-size: .8rem;
+}
+
+div.title :nth-child(1){
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.add-movies{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    font-size: .7rem;
+    color: black;
+    align-items: center;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.add-movies>img{
+    margin-right: 5px;
+}
+
+span{
+    color: blue;
+}
+
+.watchlist-main-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 550px){
+    nav,
+    main{
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    div.main-search>img{
+       height: 200px;
+       width: 50%;
+       object-fit: cover;
+      
+    }
+
+    div.main-search-div{
+        font-size: 2rem;
+    }
+}
