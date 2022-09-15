@@ -3,7 +3,7 @@ if(localStorage.length > 0){
     watchlistMain.innerHTML = ""
 }
 for (let [key, value] of Object.entries(localStorage)) {
-    fetch(`http://www.omdbapi.com/?apikey=f268058d&i=${key}&plot=full`)
+    fetch(`https://www.omdbapi.com/?apikey=f268058d&i=${key}&plot=full`)
         .then(res => res.json())
         .then(data => {
             watchlistMain.innerHTML += `

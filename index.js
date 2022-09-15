@@ -8,7 +8,7 @@ search.addEventListener("click", function()
 })
 
 btn.addEventListener("click", function(){
-    fetch(`http://www.omdbapi.com/?apikey=f268058d&s=${search.value}`)
+    fetch(`https://www.omdbapi.com/?apikey=f268058d&s=${search.value}`)
     .then(res => res.json())
     .then(data => {
         if(data.Response === "True"){
@@ -17,7 +17,7 @@ btn.addEventListener("click", function(){
             if(localStorage.getItem(imdbID)){
                 continue
             }          
-            fetch(`http://www.omdbapi.com/?apikey=f268058d&i=${imdbID}&plot=full`)
+            fetch(`https://www.omdbapi.com/?apikey=f268058d&i=${imdbID}&plot=full`)
                 .then(res => res.json())
                 .then(data => {
                     main.innerHTML += `
